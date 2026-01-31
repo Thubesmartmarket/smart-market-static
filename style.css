@@ -1,0 +1,23 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+  color: #222;
+  padding: 20px;
+}
+
+header, .card {
+  background: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 6px;
+}
+
+a {
+  color: #0070f3;
+  text-decoration: none;
+}
+
+.ad-slot {
+  text-align: center;
+  color: #999;
+}

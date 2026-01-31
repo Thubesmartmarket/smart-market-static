@@ -1,0 +1,14 @@
+[
+  {
+    "name": "Online Courses",
+    "slug": "online-courses",
+    "description": "Compare the best platforms for learning online.",
+    "offer": "https://example.com"
+  },
+  {
+    "name": "Digital Marketing Services",
+    "slug": "digital-marketing",
+    "description": "Find marketing agencies and growth tools.",
+    "offer": "https://example.com"
+  }
+]
