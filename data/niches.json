@@ -1,14 +1,14 @@
 [
-  {
-    "name": "Online Courses",
-    "slug": "online-courses",
-    "description": "Compare the best platforms for learning online.",
-    "offer": "https://example.com"
-  },
-  {
-    "name": "Digital Marketing Services",
-    "slug": "digital-marketing",
-    "description": "Find marketing agencies and growth tools.",
-    "offer": "https://example.com"
-  }
+{"slug":"ai-tech","name":"AI & Smart Tech Gadgets","emoji":"🤖","description":"AI tools, productivity automation and smart devices."},
+{"slug":"eco","name":"Eco-Friendly Products","emoji":"🌱","description":"Sustainable reusable lifestyle products."},
+{"slug":"pet","name":"Pet Wellness","emoji":"🐶","description":"Pet health, toys and accessories."},
+{"slug":"beauty","name":"Beauty & Dermatech","emoji":"💄","description":"Skincare tools and beauty devices."},
+{"slug":"home","name":"Smart Home Living","emoji":"🏠","description":"Home automation and living upgrades."},
+{"slug":"fitness","name":"Fitness Gear","emoji":"🏋️","description":"Workout tools and wellness products."},
+{"slug":"baby","name":"Baby Essentials","emoji":"🍼","description":"Parenting and newborn supplies."},
+{"slug":"pod","name":"Custom Apparel","emoji":"👕","description":"Print-on-demand clothing."},
+{"slug":"hobby","name":"DIY & Crafts","emoji":"🎨","description":"Creative kits and hobbies."},
+{"slug":"digital","name":"Digital Tools","emoji":"💻","description":"Software, templates and digital assets."}
 ]
+
+
