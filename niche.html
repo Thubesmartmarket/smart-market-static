@@ -1,19 +1,57 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Market</title>
-  <link rel="stylesheet" href="style.css">
+<title>Niche</title>
+<link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
 
-<div id="niche"></div>
+<h1 id="title"></h1>
+<p id="desc"></p>
 
-<div class="card ad-slot">Sponsored Placement</div>
+<img id="img" width="300">
 
-<div class="card">
-  <a id="offer" target="_blank">View Offers →</a>
+<div class="monetise">
+
+<a id="affiliate" target="_blank">Recommended Offer</a>
+
+<div class="ads">
+Ad space (future CPM ads)
 </div>
 
-<script src="script.js"></script>
+</div>
+
+<script>
+const map={
+"ai-tech":{"img":"assets/ai.jpg","link":"https://amzn.to/example"},
+"eco":{"img":"assets/eco.jpg","link":"https://amzn.to/example"},
+"pet":{"img":"assets/pet.jpg","link":"https://amzn.to/example"},
+"beauty":{"img":"assets/beauty.jpg","link":"https://amzn.to/example"},
+"home":{"img":"assets/home.jpg","link":"https://amzn.to/example"},
+"fitness":{"img":"assets/fit.jpg","link":"https://amzn.to/example"},
+"baby":{"img":"assets/baby.jpg","link":"https://amzn.to/example"},
+"pod":{"img":"assets/pod.jpg","link":"https://printify.com"},
+"hobby":{"img":"assets/hobby.jpg","link":"https://etsy.com"},
+"digital":{"img":"assets/digital.jpg","link":"https://gumroad.com"}
+};
+
+const p=new URLSearchParams(window.location.search);
+const slug=p.get("niche");
+
+fetch("data/niches.json")
+.then(r=>r.json())
+.then(data=>{
+const n=data.find(x=>x.slug===slug);
+document.getElementById("title").innerText=n.name;
+document.getElementById("desc").innerText=n.description;
+
+document.getElementById("img").src=map[slug].img;
+document.getElementById("affiliate").href=map[slug].link;
+});
+</script>
+
 </body>
 </html>
+
+
